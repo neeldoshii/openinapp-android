@@ -45,4 +45,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Networking -- GSON, Retrofit, Convertor, Interceptor
+    implementation (libs.google.code.gson)
+    implementation(libs.squareup.retrofit2)
+    implementation(libs.squareup.retrofit2.convertor)
+    implementation(libs.squareup.okhttp3.logging.interceptor)
 }
