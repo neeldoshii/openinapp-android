@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">openinapp</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+    <string name="campaign">Campaign</string>
+    <string name="courses">Courses</string>
+    <string name="link">Link</string>
 </resources>

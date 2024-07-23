@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/linkFragment"
+        android:icon="@drawable/ic_link"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:title="@string/link" />
+    <item
+        android:id="@+id/coursesFragment"
+        android:icon="@drawable/ic_courses"
+        app:showAsAction="ifRoom"
+        android:title="@string/courses" />
+
+    <item
+        android:title=""
+        />
+
+    <item
+        android:id="@+id/campaignFragment"
+        android:icon="@drawable/ic_campaign"
+        app:showAsAction="ifRoom"
+        android:title="@string/campaign" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="ifRoom"
+        android:title="@string/profile" />
+
+</menu>
