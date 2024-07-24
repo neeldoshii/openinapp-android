@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="regular_text_style">
+        <item name="android:textSize">@dimen/regular_dimen_16</item>
+        <item name="android:fontFamily">@font/figtree_medium</item>
+    </style>
+
+    <style name="semibold_text_style">
+        <item name="android:textSize">@dimen/semibold_dimen_20</item>
+        <item name="android:fontFamily">@font/figtree_semibold</item>
+        <item name="fontWeight">600</item>
+    </style>
+
+</resources>

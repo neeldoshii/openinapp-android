@@ -81,4 +81,10 @@ dependencies {
     implementation(libs.squareup.retrofit2)
     implementation(libs.squareup.retrofit2.convertor)
     implementation(libs.squareup.okhttp3.logging.interceptor)
+
+    // Circular Image View
+    implementation(libs.de.hdodenhof.circleimageview)
+
+    // Timber Logging
+    implementation(libs.jakewharton.timber)
 }

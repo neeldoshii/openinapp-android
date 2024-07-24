@@ -5,4 +5,9 @@
     <string name="campaign">Campaign</string>
     <string name="courses">Courses</string>
     <string name="link">Link</string>
+    <string name="greet_afternoon">Good Afternoon</string>
+    <string name="greet_evening">"Good Evening"</string>
+    <string name="greet_night">Good Night</string>
+    <string name="greet_morning">Good Morning</string>
+
 </resources>
