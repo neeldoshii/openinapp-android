@@ -87,4 +87,7 @@ dependencies {
 
     // Timber Logging
     implementation(libs.jakewharton.timber)
+
+    //Glide -- Image Loading
+    implementation(libs.glide)
 }

@@ -9,5 +9,7 @@
     <string name="greet_evening">"Good Evening"</string>
     <string name="greet_night">Good Night</string>
     <string name="greet_morning">Good Morning</string>
+    <string name="view_analytics">View Analytics</string>
+    <string name="view_all_links">View all Links</string>
 
 </resources>

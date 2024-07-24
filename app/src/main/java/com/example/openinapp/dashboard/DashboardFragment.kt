@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -71,6 +72,35 @@ class DashboardFragment : Fragment() {
         viewModel.sources.observe(viewLifecycleOwner) {
             analyticsList[2] = analyticsList[2].copy(analyticsCount = it)
             adapter.notifyItemChanged(2)
+        }
+
+
+        binding.linksRV.layoutManager = LinearLayoutManager(context)
+
+        @Suppress("DEPRECATION")
+        binding.chipsGroup.setOnCheckedChangeListener { _, checkedId ->
+            when (checkedId) {
+                binding.topLinkChip.id -> {
+                    // Handle "Top Links" selection
+                    viewModel.getApiResponse(topLinks = true)
+                }
+                binding.recentLinkChip.id -> {
+                    // Handle "Recent Links" selection
+                    viewModel.getApiResponse(topLinks = false)
+                }
+                else -> {
+                    // Handle no selection
+                    Toast.makeText(context, "No chip selected", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+
+        viewModel.toplinks.observe(viewLifecycleOwner){
+            binding.linksRV.adapter = LinksAdapter(context = requireContext(),it)
+        }
+
+        viewModel.recentLinks.observe(viewLifecycleOwner){
+            binding.linksRV.adapter = LinksAdapter(context = requireContext(),it)
         }
 
         viewModel.getApiResponse()
